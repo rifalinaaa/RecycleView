@@ -11,12 +11,10 @@ import com.bumptech.glide.request.RequestOptions
 class GridHeroAdapter (val listHeroes: ArrayList<Hero>) :
      RecyclerView.Adapter<GridHeroAdapter.GridViewHolder>() {
 
-    private lateinit var onItemClickCallback: ListHeroAdapter.OnItemClickCallback
+    private lateinit var onItemClickCallback: OnItemClickCallback
 
-    fun setOnItemClickCallback(onItemClickCallback: ListHeroAdapter.OnItemClickCallback) {
+    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
         this.onItemClickCallback = onItemClickCallback
-
-
     }
 
 
